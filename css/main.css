@@ -3,7 +3,12 @@ body {
 }
 
 .post {
-  margin-bottom: 50px;
+  margin-bottom: 42px;
+}
+
+.post .media-object {
+  width: 128px;
+  height: 128px;
 }
 
 footer {
