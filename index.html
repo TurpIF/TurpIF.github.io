@@ -15,16 +15,8 @@ title: TurpIF's Notebook
   <img class="center-block" src="{{ post.image }}" class="img-responsive">
   <hr>
   {% endif %}
-  <p>{{ post.content }}</p>
+  <p>{{ post.content | truncatehtml: 1000 }}</p>
   <a class="btn btn-primary" href="{{ post.url }}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
   {% endfor %}
   <hr>
-</div>
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
 </div>
