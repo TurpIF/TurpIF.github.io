@@ -24,7 +24,7 @@ title: TurpIF's Notebook
   <ul class="pager">
     {% if paginator.previous_page %}
     <li class="previous">
-      <a href="{{ paginator.previous_page_path |  prepend: site.base | replace: '//', '/' }}">
+      <a href="{{ paginator.previous_page_path }}">
         <span class="glyphicon glyphicon-chevron-left"></span>
         Précédents
       </a>
@@ -39,7 +39,7 @@ title: TurpIF's Notebook
     {% endif %}
     {% if paginator.next_page %}
     <li class="next">
-      <a href="{{ paginator.next_page_path |  prepend: site.base | replace: '//', '/' }}">
+      <a href="{{ paginator.next_page_path }}">
         Suivants
         <span class="glyphicon glyphicon-chevron-right"></span>
       </a>
