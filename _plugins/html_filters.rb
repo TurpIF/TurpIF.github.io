@@ -1,0 +1,1 @@
+../_bundle/truncatehtml/html_filters.rb
