@@ -1,9 +1,13 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
-
-<div class="post">
-{{ content }}
-</div>
+<h1>
+  {{ page.title }}
+  <small>{{ page.date | date_to_string }}</p></small>
+</h1>
+<hr />
+{% if page.image %}
+<img src="{{ page.image }}" class="img-responsive center-block">
+<hr>
+{% endif %}
+<p>{{ content }}</p>
