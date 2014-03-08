@@ -11,6 +11,17 @@ body {
   height: 128px;
 }
 
+.share {
+  padding-top: 30px;
+}
+
+.share li {
+  width: 87px;
+  height: 25px;
+  overflow: hidden;
+  text-align: center;
+}
+
 footer {
   padding-top: 70px;
   padding-bottom: 70px;
