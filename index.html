@@ -13,7 +13,7 @@ title: TurpIF's Notebook
   <hr />
   <div class="media">
     {% if post.image %}
-    <img src="{{ post.image }}" class="media-object pull-left">
+    <img src="{{ post.image }}" class="media-object pull-left img-thumbnail">
     {% endif %}
     <p class="media-body">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
   </div>
