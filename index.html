@@ -15,8 +15,8 @@ title: TurpIF's Notebook
   <img class="center-block" src="{{ post.image }}" class="img-responsive">
   <hr>
   {% endif %}
-  <p>{{ post.content | truncatehtml: 1000 }}</p>
+  <p>{{ post.content | truncatehtml: 3000 }}</p>
   <a class="btn btn-primary" href="{{ post.url }}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
-  {% endfor %}
   <hr>
+  {% endfor %}
 </div>
