@@ -3,54 +3,52 @@ layout: default
 title: TurpIF's Notebook
 ---
 
-<div class="row">
-  <!-- Entries -->
-  {% for post in paginator.posts %}
-  <h1>
-    <a href="{{ post.url }}">{{ post.title }}</a>
-    <small>{{ post.date | date_to_string }}</p></small>
-  </h1>
-  <hr />
-  {% if post.image %}
-  <img class="center-block" src="{{ post.image }}" class="img-responsive">
-  <hr>
-  {% endif %}
-  <p>{{ post.content | truncatehtml: 3000 }}</p>
-  <a class="btn btn-primary" href="{{ post.url }}">Plus ...</a>
-  <hr>
-  {% endfor %}
+<!-- Entries -->
+{% for post in paginator.posts %}
+<h1>
+  <a href="{{ post.url }}">{{ post.title }}</a>
+  <small>{{ post.date | date_to_string }}</p></small>
+</h1>
+<hr />
+{% if post.image %}
+<img class="center-block" src="{{ post.image }}" class="img-responsive">
+<hr>
+{% endif %}
+<p>{{ post.content | truncatehtml: 3000 }}</p>
+<a class="btn btn-primary" href="{{ post.url }}">Plus ...</a>
+<hr>
+{% endfor %}
 
-  <!-- Pager -->
-  <ul class="pager">
-    {% if paginator.previous_page %}
-    <li class="previous">
-      <a href="{{ paginator.previous_page_path }}">
-        <span class="fa fa-chevron-left"></span>
-        Précédents
-      </a>
-    </li>
-    {% else %}
-    <li class="previous disabled">
-      <a href="#">
-        <span class="fa fa-chevron-left"></span>
-        Précédents
-      </a>
-    </li>
-    {% endif %}
-    {% if paginator.next_page %}
-    <li class="next">
-      <a href="{{ paginator.next_page_path }}">
-        Suivants
-        <span class="fa fa-chevron-right"></span>
-      </a>
-    </li>
-    {% else %}
-    <li class="next disabled">
-      <a href="#">
-        Suivants
-        <span class="fa fa-chevron-right"></span>
-      </a>
-    </li>
-    {% endif %}
-  </ul>
-</div>
+<!-- Pager -->
+<ul class="pager">
+  {% if paginator.previous_page %}
+  <li class="previous">
+    <a href="{{ paginator.previous_page_path }}">
+      <span class="fa fa-chevron-left"></span>
+      Précédents
+    </a>
+  </li>
+  {% else %}
+  <li class="previous disabled">
+    <a href="#">
+      <span class="fa fa-chevron-left"></span>
+      Précédents
+    </a>
+  </li>
+  {% endif %}
+  {% if paginator.next_page %}
+  <li class="next">
+    <a href="{{ paginator.next_page_path }}">
+      Suivants
+      <span class="fa fa-chevron-right"></span>
+    </a>
+  </li>
+  {% else %}
+  <li class="next disabled">
+    <a href="#">
+      Suivants
+      <span class="fa fa-chevron-right"></span>
+    </a>
+  </li>
+  {% endif %}
+</ul>
