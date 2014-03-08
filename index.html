@@ -16,7 +16,7 @@ title: TurpIF's Notebook
   <hr>
   {% endif %}
   <p>{{ post.content | truncatehtml: 3000 }}</p>
-  <a class="btn btn-primary" href="{{ post.url }}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
+  <a class="btn btn-primary" href="{{ post.url }}">Plus ...</a>
   <hr>
   {% endfor %}
 
@@ -25,14 +25,14 @@ title: TurpIF's Notebook
     {% if paginator.previous_page %}
     <li class="previous">
       <a href="{{ paginator.previous_page_path }}">
-        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="fa fa-chevron-left"></span>
         Précédents
       </a>
     </li>
     {% else %}
     <li class="previous disabled">
       <a href="#">
-        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="fa fa-chevron-left"></span>
         Précédents
       </a>
     </li>
@@ -41,14 +41,14 @@ title: TurpIF's Notebook
     <li class="next">
       <a href="{{ paginator.next_page_path }}">
         Suivants
-        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="fa fa-chevron-right"></span>
       </a>
     </li>
     {% else %}
     <li class="next disabled">
       <a href="#">
         Suivants
-        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="fa fa-chevron-right"></span>
       </a>
     </li>
     {% endif %}
