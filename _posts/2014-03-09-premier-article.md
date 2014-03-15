@@ -2,7 +2,7 @@
 layout: post
 title: Jekyll en premier
 image: "/assets/premier-article-icone.png"
-categories: web
+categories: web jekyll github
 ---
 
 Voici mon premier article sur ce nouveau site que je viens de faire rapidos.
@@ -12,7 +12,7 @@ Je m'appelle Pierre Turpin, j'ai dans les vingts ans (21 pour être exact) et je
 suis en étude d'ingénieur en informatique en ce moment. J'aime les nouvelles
 technologies et en général pas mal de trucs qui touche à l'informatique allant
 du développement de programmes systèmes avec des forks de partout jusqu'au
-basic jeu vidéo en navigateur en passant par les memes et les chats sur le net
+petit jeu vidéo en navigateur en passant par les memes et les chats sur le net
 (et aussi le Python <3 ).
 
 Avec cette description, on pourrait penser que je reste constamment enfermé
@@ -41,7 +41,7 @@ cool.
 ### Un peu de liquide...
 
 Jekyll est écrit en **Ruby** et est un générateur de sites statiques. Rien
-n'est dynamique. Cela rend son utilisation assez délicate avec des gros site
+n'est dynamique. Cela rend son utilisation assez délicate avec des gros sites
 (voir impossible je pense) mais pour des sites simples c'est tout à fait
 satisfaisant.
 
@@ -109,7 +109,7 @@ objet qui contient toutes les informations utiles.
 Voici une liste non-exhaustive des attributs de l'objet `paginator` :
 
 - `paginator.page` : Numéro de la page courante
-- `paginator.posts` : List des articles pour la page courante
+- `paginator.posts` : Liste des articles pour la page courante
 - `paginator.previous_page_path` : URL vers la page précédente
   (`paginator.next_page_path` existe aussi)
 - `paginator.previous_page` : Numéro de page de la précédente
@@ -120,7 +120,7 @@ Jekyll pour plus de détail.
 
 #### Des articles en Markdown ou Textile
 
-Jekyll propose d'écrire nos articles avec le langage de notre choix parmis le
+Jekyll propose d'écrire nos articles avec le langage de notre choix parmi le
 **HTML**, le **Mardown** ou le **Textile**. Dans le cas des deux derniers,
 ceux-ci sont d'abord généré en HTML puis inclue dans le code source du site.
 
@@ -129,15 +129,15 @@ liberté pour la mise en page et la structuration de l'article.
 
 De plus, les articles ne sont pas stockés dans une base de donnée mais
 simplement dans un dossier *./_post*. Chaque fichier à l'intérieur de ce
-dossier est considéré comme un article. Pour le petits sites (qui est la cible
-de Jekyll), cela rend la maintenance assez aisé et simple. En effet, AMHA, la
+dossier est considéré comme un article. Pour les petits sites (qui est la cible
+de Jekyll), cela rend la maintenance assez aisée et simple. En effet, AMHA, la
 gestion et l'utilisation est plus facile qu'avec une base de données.
 
 ### Intégration avec GitHub
 
 J'utilise énormément [GitHub][] et ce qui m'a fait choisir Jekyll c'est avant
 tout son intégration dans les pages GitHub. GitHub permet d'héberger des pages
-sur le compte de chaque utilisateur. Cepandant, ce n'est pas un hébergeur. Donc
+sur le compte de chaque utilisateur. Cependant, ce n'est pas un hébergeur. Donc
 les services proposés sont très simple : page statique uniquement. Donc seul
 les langages HTML/CSS/JS sont autorisés.
 
@@ -145,7 +145,7 @@ Faire un site de une seule page est réalisable mais créer un site un peu plus
 compliqué avec même que quelques pages devient alors très rapidement compliqué.
 Il faut un fichier HTML par page avec à chaque fois le header et le footer qui
 est recopié dans chaque fichier.  Cela signifie qu'à la moindre modification,
-il faut la faire dans tous les fichiers. A partir de 3-4 pages différentes ça
+il faut la faire dans tous les fichiers. À partir de 3-4 pages différentes ça
 devient très rapidement ingérables.
 
 C'est la que Jekyll et GitHub entre en jeu. Jekyll permet de générer un site
@@ -158,7 +158,7 @@ site web.
 #### Quelques limites
 
 Cette fusion a l'air génial mais reste toutefois limité. En effet, une des
-puissance de Jekyll vient de sa facilité à rajouter des extensions et créer de
+puissances de Jekyll vient de sa facilité à rajouter des extensions et créer de
 nouveaux tags par exemple. Ces extensions sont écrites en Ruby et doivent donc
 être exécuté avec Jekyll pour la génération du site. Tout cela est désactivé
 sur GitHub par raison de sécurité. C'est donc un très gros frein dès qu'il y a
@@ -168,11 +168,11 @@ Heureusement il y a quand même moyen de contourner cette difficulté en
 utilisant deux répertoires GitHub : un qui contient la source Jekyll avec les
 extensions et un autre qui contient le site généré. Il faut alors exécuter soit
 même la construction du site et pousser celui-ci sur le repo distant. On perd
-malheurseusement l'intégration de Jekyll dans GitHub.
+malheureusement l'intégration de Jekyll dans GitHub.
 
 #### Aller loin avec GitHub
 
-GitHub permet de forker des repo très facilement. Cela est très utilisés pour
+GitHub permet de forker des repo très facilement. Cela est très utilisé pour
 contribuer sur un projet. On peut alors penser que ce système peut être
 reproduit sur des sites web. Il est tout à fait possible de contribuer à
 l'écriture des articles, au design, ... Cela permet de reproduire l'effet wiki
