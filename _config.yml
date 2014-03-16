@@ -1,6 +1,8 @@
 name: TurpIF's Notebook
-markdown: redcarpet
 pygments: true
 paginate: 5
 paginate_path: "/page:num"
 url: http://turpif.github.io
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables"]
