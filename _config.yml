@@ -1,5 +1,5 @@
 name: TurpIF's Notebook
-pygments: true
+highlighter: rouge
 paginate: 5
 paginate_path: "/page:num"
 url: http://turpif.github.io
